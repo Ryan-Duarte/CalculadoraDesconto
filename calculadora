@@ -1,0 +1,18 @@
+valor = float(input("Qual valor do produto? "))
+pergunta = input("Você tem codigo promocional?")
+
+if pergunta == "sim":
+   resposta1 = input("Qual seu codigo promocional?")
+   if resposta1 == "python":
+       desconto1 = valor * 90 / 100
+       print(f"Seu desconto é de R$:{desconto1}, com isso você irá pagar R$:{valor - desconto1} ")
+
+   else:print("codigo não autorizado")
+
+
+else:
+    resposta2 = float(input("Quantos % de desconto você tem?"))
+    desconto2 = valor * resposta2 / 100
+    print(f"Seu desconto é de R$:{desconto2}, com isso você irá pagar R$:{valor - desconto2} ")
+
+print("Obrigado por comprar aqui.")
